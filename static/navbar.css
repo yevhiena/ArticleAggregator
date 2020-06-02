@@ -1,0 +1,23 @@
+body {
+  padding-bottom: 40px;
+
+}
+
+.btn-dark-orange {
+    background-color: #ff692d;
+    border: wheat;
+    color: white;
+}
+.navbar-brand{
+  color: #800000;
+  font-family: 'Raleway', sans-serif;
+  font-size: x-large;
+  font-weight: 400 ;
+}
+
+
+.navbar-light{
+  margin-bottom: 30px;
+  background:url('img/back.jpg') ;
+}
+

@@ -1,0 +1,53 @@
+html, body{
+    height: 100%;
+    max-height: 100%;
+}
+
+
+
+h1{
+    color: #80443e;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
+
+.body-post{
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: left;
+    color: black;
+
+}
+
+.post-title{
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+
+
+
+.btn-custom{
+    background-color: #801431;
+    color: white;
+    border-radius: 19px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+
+.btn-custom:hover{
+    background-color: #800503;
+}
+
+
+
+.author{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+
+}
+

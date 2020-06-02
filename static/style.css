@@ -1,0 +1,37 @@
+html, body{
+    height: 100%;
+    max-height: 100%;
+}
+
+.wrapper{
+    background: url('img/back.jpg');
+    height: 100%;
+    color: white;
+    font-weight: 200;
+}
+h1{
+    color: #801431;
+    text-align: center;
+}
+
+.btn-orange {
+    background-color: darkorange;
+    border: none;
+    color: white;
+}
+
+.btn-dark-orange {
+    background-color: #ff692d;
+    border: wheat;
+    color: white;
+}
+
+.btn-orange:hover{
+    background-color: #ff721f;
+    border: none;
+}
+
+.btn-dark-orange:hover {
+    background-color: #ff4e28;
+    border: none;
+}
