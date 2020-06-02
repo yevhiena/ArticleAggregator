@@ -1,0 +1,282 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{%  block content %}
+    <div class="container">
+        <div class="section">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-8">
+
+                    {% for article in articles %}
+                        {% if article.category == 'Hi-Tech' and user.hi_tech == True %}
+                            <div class="title">
+                                <h1>{{ article.name  }}</h1>
+                            </div>
+                            <div class="post-title">
+                                <div class="row-post-title ">
+                                    <div class="col col-lg-3">
+                                        <div class="category">
+                                            {% for category in categories%}
+                                                {%  if article.category == category.name_category %}
+                                                    <a class="btn btn-custom btn-block " href="{% url 'Category_pages' category.name_category %}" role="button">{{ article.category }}</a>
+                                                {% endif %}
+
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                         <div class="author text-lg-right">
+                                             {{ article.author }}
+
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body-post">
+                                <p>{{ article.body  }}</p>
+                            </div>
+                        {% endif %}
+                        {% if article.category == 'Sci-Fi' and user.sci_fi == True %}
+                            <div class="title">
+                                <h1>{{ article.name  }}</h1>
+                            </div>
+                            <div class="post-title">
+                                <div class="row-post-title ">
+                                    <div class="col col-lg-3">
+                                        <div class="category">
+                                            {% for category in categories%}
+                                                {%  if article.category == category.name_category %}
+                                                    <a class="btn btn-custom btn-block " href="{% url 'Category_pages' category.name_category %}" role="button">{{ article.category }}</a>
+                                                {% endif %}
+
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                         <div class="author text-lg-right">
+                                             {{ article.author }}
+
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body-post">
+                                <p>{{ article.body  }}</p>
+                            </div>
+                        {% endif %}
+                        {% if article.category == 'История' and user.history == True %}
+                            <div class="title">
+                                <h1>{{ article.name  }}</h1>
+                            </div>
+                            <div class="post-title">
+                                <div class="row-post-title ">
+                                    <div class="col col-lg-3">
+                                        <div class="category">
+                                            {% for category in categories%}
+                                                {%  if article.category == category.name_category %}
+                                                    <a class="btn btn-custom btn-block " href="{% url 'Category_pages' category.name_category %}" role="button">{{ article.category }}</a>
+                                                {% endif %}
+
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                         <div class="author text-lg-right">
+                                             {{ article.author }}
+
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body-post">
+                                <p>{{ article.body  }}</p>
+                            </div>
+                        {% endif %}
+                        {% if article.category == 'Биология' and user.biology == True %}
+                            <div class="title">
+                                <h1>{{ article.name  }}</h1>
+                            </div>
+                            <div class="post-title">
+                                <div class="row-post-title ">
+                                    <div class="col col-lg-3">
+                                        <div class="category">
+                                            {% for category in categories%}
+                                                {%  if article.category == category.name_category %}
+                                                    <a class="btn btn-custom btn-block " href="{% url 'Category_pages' category.name_category %}" role="button">{{ article.category }}</a>
+                                                {% endif %}
+
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                         <div class="author text-lg-right">
+                                             {{ article.author }}
+
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body-post">
+                                <p>{{ article.body  }}</p>
+                            </div>
+                        {% endif %}
+                        {% if article.category == 'Медиа' and user.media == True %}
+                            <div class="title">
+                                <h1>{{ article.name  }}</h1>
+                            </div>
+                            <div class="post-title">
+                                <div class="row-post-title ">
+                                    <div class="col col-lg-3">
+                                        <div class="category">
+                                            {% for category in categories%}
+                                                {%  if article.category == category.name_category %}
+                                                    <a class="btn btn-custom btn-block " href="{% url 'Category_pages' category.name_category %}" role="button">{{ article.category }}</a>
+                                                {% endif %}
+
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                         <div class="author text-lg-right">
+                                             {{ article.author }}
+
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body-post">
+                                <p>{{ article.body  }}</p>
+                            </div>
+                        {% endif %}
+                        {% if article.category == 'Психология' and user.psychology == True %}
+                            <div class="title">
+                                <h1>{{ article.name  }}</h1>
+                            </div>
+                            <div class="post-title">
+                                <div class="row-post-title ">
+                                    <div class="col col-lg-3">
+                                        <div class="category">
+                                            {% for category in categories%}
+                                                {%  if article.category == category.name_category %}
+                                                    <a class="btn btn-custom btn-block " href="{% url 'Category_pages' category.name_category %}" role="button">{{ article.category }}</a>
+                                                {% endif %}
+
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                         <div class="author text-lg-right">
+                                             {{ article.author }}
+
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body-post">
+                                <p>{{ article.body  }}</p>
+                            </div>
+                        {% endif %}
+                        {% if article.category == 'Медицина' and user.medicine == True %}
+                            <div class="title">
+                                <h1>{{ article.name  }}</h1>
+                            </div>
+                            <div class="post-title">
+                                <div class="row-post-title ">
+                                    <div class="col col-lg-3">
+                                        <div class="category">
+                                            {% for category in categories%}
+                                                {%  if article.category == category.name_category %}
+                                                    <a class="btn btn-custom btn-block " href="{% url 'Category_pages' category.name_category %}" role="button">{{ article.category }}</a>
+                                                {% endif %}
+
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                         <div class="author text-lg-right">
+                                             {{ article.author }}
+
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body-post">
+                                <p>{{ article.body  }}</p>
+                            </div>
+                        {% endif %}
+                        {% if article.category == 'Физика' and user.physics == True %}
+                            <div class="title">
+                                <h1>{{ article.name  }}</h1>
+                            </div>
+                            <div class="post-title">
+                                <div class="row-post-title ">
+                                    <div class="col col-lg-3">
+                                        <div class="category">
+                                            {% for category in categories%}
+                                                {%  if article.category == category.name_category %}
+                                                    <a class="btn btn-custom btn-block " href="{% url 'Category_pages' category.name_category %}" role="button">{{ article.category }}</a>
+                                                {% endif %}
+
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                         <div class="author text-lg-right">
+                                             {{ article.author }}
+
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body-post">
+                                <p>{{ article.body  }}</p>
+                            </div>
+                        {% endif %}
+                        {% if article.category == 'Космонавтика' and user.cosmology == True %}
+                            <div class="title">
+                                <h1>{{ article.name  }}</h1>
+                            </div>
+                            <div class="post-title">
+                                <div class="row-post-title ">
+                                    <div class="col col-lg-3">
+                                        <div class="category">
+                                            {% for category in categories%}
+                                                {%  if article.category == category.name_category %}
+                                                    <a class="btn btn-custom btn-block " href="{% url 'Category_pages' category.name_category %}" role="button">{{ article.category }}</a>
+                                                {% endif %}
+
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                         <div class="author text-lg-right">
+                                             {{ article.author }}
+
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body-post">
+                                <p>{{ article.body  }}</p>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{%  block content %}
+    <div class="container">
+        <div class="section">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-8">
+
+                    {% for article in articles %}
+                            {% if article.category == 'Психология' %}
+                            <div class="title">
+                                <h1>{{ article.name  }}</h1>
+                            </div>
+                            <div class="post-title">
+                                <div class="row-post-title ">
+                                    <div class="col col-lg-3">
+                                        <div class="category">
+                                            <a class="btn btn-custom btn-block " href="#" role="button">{{ article.category }}</a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                         <div class="author text-lg-right">
+                                             {{ article.author }}
+
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="body-post">
+                                <p>{{ article.body  }}</p>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

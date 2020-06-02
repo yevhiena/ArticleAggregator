@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{%  block content %}
+    <div class="container">
+        <div class="section">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-8">
+
+                        <div class="title">
+                            <h1>Управление подписками</h1>
+                        </div>
+                        <div class="post-title">
+                            <h2>Вы можете выбрать тематики, которые вас интересуют.
+                                Статьи по заданным темам будут отображаться в разделе Subscriptions</h2>
+                        </div>
+
+
+                        <div class="body-post">
+
+                            <form action=""  method="post">{% csrf_token %}
+                                {% for categ in categories %}
+                                    <div class="form-check">
+                                        <label>
+                                            <input class="form-check-input" type="checkbox" name="choices" value="{{ categ.name_category }}">{{ categ.name_category }}
+                                        </label>
+                                    </div>
+                                {% endfor %}
+                                <button type="submit" name="Confirm" class="btn btn-dark-orange">Confirm</button>
+                            </form>
+
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
